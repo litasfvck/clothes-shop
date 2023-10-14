@@ -1,0 +1,22 @@
+.product-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #56518d;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 250px;
+  height: 350px;
+  cursor: pointer;
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+  }
+
+  img {
+    padding: 5px;
+    height: 280px;
+  }
+}
