@@ -13,12 +13,12 @@ const categories = [
 
 const Categories: FC<CategoriesProps> = () => {
   return (
-    <div className='categories'>
-      <ul>
-        {categories.map((cat) => (
-          <li>{cat}</li>
-        ))}
-      </ul>
+    <div className='categories' key='1'>
+      {categories.map((cat, index) => (
+        <div className='category' key={index}>
+          {cat}
+        </div>
+      ))}
     </div>
   );
 };

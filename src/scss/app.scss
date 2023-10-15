@@ -67,30 +67,6 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 10px;
-}
-
-.sort-settings {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
-  padding: 10px;
-
-  ul {
-    display: flex;
-
-    li {
-      background-color: #1e1e20;
-      border: none;
-      padding: 4px;
-      font-size: 15px;
-      cursor: pointer;
-      transition: background-color 0.1s ease-in-out;
-      margin-right: 5px;
-
-      &:hover {
-        background-color: lighten(#1e1e20, 10%);
-      }
-    }
-  }
+  padding-top: 15px;
+  padding-bottom: 15px;
 }

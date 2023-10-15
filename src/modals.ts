@@ -4,4 +4,6 @@ export interface IProduct {
   title: string;
   price: number;
   liked: boolean;
+  category: string;
+  brand: string;
 }

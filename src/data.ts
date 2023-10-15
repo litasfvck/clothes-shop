@@ -7,18 +7,22 @@ import bershka from './assets/bershka.png';
 export const products: IProduct[] = [
   {
     id: 1,
-    image: rick,
+    image: '',
     title: 'Rick Owens',
     price: 1000,
     liked: false,
+    category: 'shoes',
+    brand: 'rick-owens',
   },
 
   {
     id: 2,
     image: balency,
-    title: 'Balensiaga)',
+    title: 'Balenciaga)',
     price: 500,
     liked: false,
+    category: 'shoes',
+    brand: 'balenciaga',
   },
 
   {
@@ -27,6 +31,8 @@ export const products: IProduct[] = [
     title: 'Maison Margella',
     price: 10000,
     liked: false,
+    category: 'shoes',
+    brand: 'maison-margella',
   },
 
   {
@@ -35,6 +41,8 @@ export const products: IProduct[] = [
     title: 'Bershka',
     price: 10,
     liked: false,
+    category: 'shoes',
+    brand: 'bershka',
   },
 
   {
@@ -43,6 +51,8 @@ export const products: IProduct[] = [
     title: 'Bershka',
     price: 10,
     liked: false,
+    category: 'shoes',
+    brand: 'bershka',
   },
 
   {
@@ -51,6 +61,8 @@ export const products: IProduct[] = [
     title: 'Bershka',
     price: 10,
     liked: false,
+    category: 'shoes',
+    brand: 'bershka',
   },
 
   {
@@ -59,6 +71,8 @@ export const products: IProduct[] = [
     title: 'Bershka',
     price: 10,
     liked: false,
+    category: 'shoes',
+    brand: 'bershka',
   },
 
   {
@@ -67,6 +81,8 @@ export const products: IProduct[] = [
     title: 'Bershka',
     price: 10,
     liked: false,
+    category: 'shoes',
+    brand: 'bershka',
   },
 
   {
@@ -75,6 +91,8 @@ export const products: IProduct[] = [
     title: 'Bershka',
     price: 10,
     liked: false,
+    category: 'shoes',
+    brand: 'bershka',
   },
 
   {
@@ -83,5 +101,7 @@ export const products: IProduct[] = [
     title: 'zxc',
     price: 100000000,
     liked: false,
+    category: 'business-suit',
+    brand: 'cursed',
   },
 ];
