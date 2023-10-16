@@ -2,14 +2,22 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 40px;
+  height: 80px;
+}
+header .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #7289da;
+  padding-left: 40px;
+  padding-right: 40px;
+  align-items: center;
+  background: #000000;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 header span {
   font-weight: 600;
@@ -29,11 +37,15 @@ header .search {
   background: #fff;
   border: none;
   border-radius: 15px;
+  -webkit-transition: width 2s ease-in-out;
+  transition: width 2s ease-in-out;
+}
+header .search:hover {
+  width: 300px;
 }
 header .search input {
   border: none;
   padding: 8px;
-  width: 250px;
   background: transparent;
 }
 header .search button {
@@ -120,19 +132,24 @@ header ul li .nav:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #fff;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 10px;
+  background-color: #d3d3d3;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 250px;
   height: 350px;
   cursor: pointer;
   border-radius: 10px;
-  color: black;
+  color: rgb(255, 255, 255);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+.product-container:hover {
+  -webkit-transform: scale(0.98);
+      -ms-transform: scale(0.98);
+          transform: scale(0.98);
 }
 .product-container .info {
   display: -webkit-box;
@@ -141,10 +158,14 @@ header ul li .nav:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .product-container .info .quick-info {
   display: -webkit-box;
@@ -156,8 +177,11 @@ header ul li .nav:hover {
           flex-direction: column;
 }
 .product-container img {
-  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
   height: 280px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -168,7 +192,6 @@ header ul li .nav:hover {
   font-family: "Montserrat", sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  min-width: 70px;
 }
 
 a {
@@ -220,8 +243,10 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #000;
+  background: #1d1d1d;
   padding: 10px;
+  -webkit-box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 aside {
@@ -276,4 +301,6 @@ footer {
   gap: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
+  -webkit-box-shadow: inset 0 5px 100px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 5px 100px rgba(0, 0, 0, 0.5);
 }

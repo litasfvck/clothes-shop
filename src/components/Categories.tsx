@@ -9,6 +9,7 @@ const categories = [
   'Hoodies',
   'Business suit',
   'Dripski',
+  'Polo',
 ];
 
 const Categories: FC<CategoriesProps> = () => {

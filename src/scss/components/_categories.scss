@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  background: #282b30;
+  background: #1d1d1d;
   // gap: 10px;
 
   .category {
@@ -15,7 +15,7 @@
     font-weight: 100;
     cursor: pointer;
     &:hover {
-      background-color: darken(#282b30, 2%);
+      background-color: darken(#1d1d1d, 2%);
     }
   }
 }

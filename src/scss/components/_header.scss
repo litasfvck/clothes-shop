@@ -1,9 +1,22 @@
 header {
   display: flex;
-  justify-content: space-between;
-  padding: 40px;
-  align-items: center;
-  background: #7289da;
+  height: 80px;
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    align-items: center;
+    background: #000000;
+    flex: 1;
+  }
+
+  .header-right {
+    display: flex;
+    gap: 40px;
+  }
 
   span {
     font-weight: 600;
@@ -13,16 +26,21 @@ header {
 
   .search {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    background: #fff;
+    background: #ebebeb;
     border: none;
     border-radius: 15px;
+    width: 230px;
+    flex-wrap: 1;
 
     input {
       border: none;
-      padding: 8px;
-      width: 250px;
+      border-radius: 15px;
+      padding: 10px;
+      // width: 40px;
+      flex-grow: 1;
+
       background: transparent;
     }
 
@@ -32,11 +50,11 @@ header {
       border: none;
       border-radius: 15px;
       padding: 8px;
-      background-color: #fff;
+      background-color: #ebebeb;
       cursor: pointer;
 
       &:hover {
-        background-color: darken(#ffffff, 8%);
+        background-color: #fff;
       }
     }
   }

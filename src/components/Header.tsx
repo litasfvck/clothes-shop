@@ -9,30 +9,34 @@ interface HeaderProps {}
 const Header: FC<HeaderProps> = () => {
   return (
     <header>
-      <Link to='/'>
-        <span>ATSOS</span>
-      </Link>
-      <div className='search'>
-        <input placeholder='Search ... ' />
-        <button>
-          <CgSearch style={{ width: '15px', height: '15px' }} />
-        </button>
+      <div className='header-container'>
+        <div className='header-right'>
+          <Link to='/'>
+            <span>ATSOS</span>
+          </Link>
+          <div className='search'>
+            <input placeholder='Search ... ' />
+            <button>
+              <CgSearch style={{ width: '15px', height: '15px' }} />
+            </button>
+          </div>
+        </div>
+
+        <ul>
+          <li>Login</li>
+          <Link to='/favorite'>
+            <li>
+              <MdOutlineFavorite style={{ width: '30px', height: '30px' }} />
+            </li>
+          </Link>
+
+          <Link to='/cart'>
+            <li>
+              <PiShoppingCartSimple style={{ width: '30px', height: '30px' }} />
+            </li>
+          </Link>
+        </ul>
       </div>
-
-      <ul>
-        <li>Login</li>
-        <Link to='/favorite'>
-          <li>
-            <MdOutlineFavorite style={{ width: '30px', height: '30px' }} />
-          </li>
-        </Link>
-
-        <Link to='/cart'>
-          <li>
-            <PiShoppingCartSimple style={{ width: '30px', height: '30px' }} />
-          </li>
-        </Link>
-      </ul>
     </header>
   );
 };
