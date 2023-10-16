@@ -3,7 +3,11 @@ import { FC } from 'react';
 interface CartProps {}
 
 const Cart: FC<CartProps> = () => {
-  return <div className='container'>Cart is empty</div>;
+  return (
+    <section>
+      <div className='wrapper-cart'>Your cart is empty</div>
+    </section>
+  );
 };
 
 export default Cart;
