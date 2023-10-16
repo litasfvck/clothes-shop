@@ -1,8 +1,8 @@
 import { FC, useEffect, useState } from 'react';
-import Categories from '../components/Categories';
-import ProductBlock from '../components/ProductBlock';
+import Categories from '../../components/Categories';
+import ProductBlock from '../../components/ProductBlock';
 import axios, { AxiosError } from 'axios';
-import { IProduct } from '../types';
+import { IProduct } from '../../types';
 
 interface HomeProps {}
 
@@ -44,14 +44,14 @@ const Home: FC<HomeProps> = () => {
       <section>
         {loading && <p>Loading ... </p>}
         {error && <p>{error}</p>}
-        <div className='products-wrapper'>
+        <div className='wrapper-products'>
           {products.map((p, index) => (
             <ProductBlock product={p} key={index} />
           ))}
         </div>
       </section>
 
-      <aside>aside2</aside>
+      {/* <aside>aside2</aside> */}
     </main>
   );
 };
