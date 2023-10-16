@@ -16,9 +16,12 @@ const ProductBlock: FC<ProductBlockProps> = ({ product }) => {
           <h5>Price: {product.price} $</h5>
         </div>
 
-        <span>
-          <MdOutlineFavorite style={{ width: '25px', height: '25px' }} />
-        </span>
+        <div className='spans'>
+          <span>+</span>
+          <span>
+            <MdOutlineFavorite style={{ width: '25px', height: '25px' }} />
+          </span>
+        </div>
       </div>
     </div>
   );

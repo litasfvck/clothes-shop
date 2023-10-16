@@ -15,10 +15,10 @@ const Home: FC<HomeProps> = () => {
     try {
       setError('');
       setLoading(true);
-      const response = await axios.get<IProduct[]>(
+      const { data } = await axios.get<IProduct[]>(
         'https://652c1176d0d1df5273ef1c48.mockapi.io/items'
       );
-      setProducts(response.data);
+      setProducts(data);
       setLoading(false);
     } catch (e: unknown) {
       const error = e as AxiosError;
