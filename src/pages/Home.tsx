@@ -2,7 +2,7 @@ import { FC, useEffect, useState } from 'react';
 import Categories from '../components/Categories';
 import ProductBlock from '../components/ProductBlock';
 import axios, { AxiosError } from 'axios';
-import { IProduct } from '../modals';
+import { IProduct } from '../types';
 
 interface HomeProps {}
 

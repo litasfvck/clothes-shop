@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { IProduct } from '../modals';
+import { IProduct } from '../types';
 import { MdOutlineFavorite } from 'react-icons/md';
 
 interface ProductBlockProps {
@@ -16,12 +16,9 @@ const ProductBlock: FC<ProductBlockProps> = ({ product }) => {
           <h5>Price: {product.price} $</h5>
         </div>
 
-        <div className='spans'>
-          <span>+</span>
-          <span>
-            <MdOutlineFavorite style={{ width: '25px', height: '25px' }} />
-          </span>
-        </div>
+        <span>
+          <MdOutlineFavorite style={{ width: '25px', height: '25px' }} />
+        </span>
       </div>
     </div>
   );
