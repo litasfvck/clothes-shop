@@ -1,5 +1,12 @@
 import { createContext } from "react";
+import { ProductsContextProps, ProductsStateContextProps } from "./types";
 
-const initialState = {};
+export const initialState: ProductsStateContextProps = {
+  products: [],
+  loading: true,
+};
 
-export const store = createContext(initialState);
+export const ProductsStore = createContext<ProductsContextProps>({
+  ...initialState,
+  dispatch: () => {},
+});
