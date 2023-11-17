@@ -1,21 +1,27 @@
 .categories {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 10vh;
-  background: #1d1d1d;
-  // gap: 10px;
-
-  .category {
+  ul {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    width: 15vw;
     height: 10vh;
-    font-weight: 100;
-    cursor: pointer;
-    &:hover {
-      background-color: darken(#1d1d1d, 2%);
+    background: #1d1d1d;
+    // gap: 10px;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 15vw;
+      height: 10vh;
+      font-weight: 100;
+      cursor: pointer;
+      &:hover {
+        background-color: darken(#1d1d1d, 2%);
+      }
+
+      &.active {
+        background-color: darken(#1d1d1d, 2%);
+      }
     }
   }
 }

@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import { MdOutlineFavorite } from 'react-icons/md';
 import { PiShoppingCartSimple } from 'react-icons/pi';
-import { CgSearch } from 'react-icons/cg';
 import { Link } from 'react-router-dom';
+import SearchBar from '../SearchBar.tsx';
 
 interface HeaderProps {}
 
@@ -14,12 +14,8 @@ const Header: FC<HeaderProps> = () => {
           <Link to='/'>
             <span>ATSOS</span>
           </Link>
-          <div className='header-search'>
-            <input placeholder='Search ... ' />
-            <button>
-              <CgSearch style={{ width: '15px', height: '15px' }} />
-            </button>
-          </div>
+
+          <SearchBar />
         </div>
 
         <ul>
